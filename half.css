@@ -22,6 +22,10 @@ body{
   direction:rtl;
 }
 
+#right,#left{
+  direction:ltr;
+}
+
 .debug{
   height:1000vh;  
 }
