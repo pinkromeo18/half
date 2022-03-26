@@ -22,11 +22,8 @@ body{
   direction:rtl;
 }
 
-#left>div{
+.debug{
   height:1000vh;  
-}
-#right>div{
-  height:1000vh;
 }
 
 :root{
