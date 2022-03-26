@@ -1,0 +1,80 @@
+
+body{
+  /*over write*/
+  background:black;
+  color:white;
+}
+
+
+body{
+  margin:0;
+  overflow-y: hidden;
+}
+
+.split{display: flex;flex-direction: row;}
+
+#left-scroll,#right-scroll{
+  height:100vh;
+  overflow-y:scroll;
+}
+
+#left-scroll{
+  direction:rtl;
+}
+
+#left>div{
+  height:1000vh;  
+}
+#right>div{
+  height:1000vh;
+}
+
+:root{
+  --font-family:"Yu Gothic", YuGothic,"Hiragino Kaku Gothic Pro",Meiryo, Osaka,"MS PGothic", sans-serif;  
+  --brand:#0a0c10;
+  --brand2:#272b33;
+  --border:#7a828e;
+  --word:#f0f3f6;
+  --link:#71b7ff;  
+}
+
+.gutter{
+  border-left:1px solid var(--brand2);
+}
+
+.gutter.gutter-horizontal {
+  background:var(--brand);  
+  cursor: col-resize;
+}
+
+::-webkit-scrollbar
+{
+  width:10px;
+  background:var(--brand);
+}
+::-webkit-scrollbar:horizontal
+{
+  height:10px;
+}
+::-webkit-scrollbar-button
+{
+  width:10px;
+  height:10px;
+  background:var(--brand2);  
+}
+::-webkit-scrollbar-piece
+{
+  background:var(--brand2);
+}
+::-webkit-scrollbar-piece:start
+{
+  background:var(--brand2);
+}
+::-webkit-scrollbar-thumb
+{
+  background:var(--brand2);
+}
+::-webkit-scrollbar-corner
+{
+  background:var(--brand2);
+}
